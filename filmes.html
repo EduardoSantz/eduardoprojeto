@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Terror</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Obscura Filmes</h1>
+        <h2 class="subtitulo">Sobre o Terror</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="filmes.html">Filmes</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="historia">
+            <h2>História do Gênero Terror</h2>
+            <p>O gênero de filmes de terror é um dos mais antigos e fascinantes da história do cinema. Desde o lançamento de filmes como <em>Nosferatu</em> (1922), o gênero tem sido uma maneira de explorar os medos humanos mais profundos, muitas vezes trazendo à tona questões psicológicas, sociais e culturais.</p>
+        </section>
+
+        <section class="subgeneros">
+            <h3>Subgêneros do Terror</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Subgênero</th>
+                        <th>Descrição</th>
+                        <th>Exemplo</th>
+                        <th>Características</th>
+                        <th>Exemplos Famosos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Terror Psicológico</strong></td>
+                        <td>Explora os medos mentais e emocionais, focando em aspectos psicológicos.</td>
+                        <td>Medo de ser perseguido</td>
+                        <td>Suspense, medo de loucura</td>
+                        <td>The Shining, Psicose</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Terror Sobrenatural</strong></td>
+                        <td>Gira em torno de forças ou entidades sobrenaturais, como fantasmas, demônios ou criaturas míticas.</td>
+                        <td>Presenças invisíveis</td>
+                        <td>Elementos místicos, paranormalidade</td>
+                        <td>O Exorcista, Poltergeist</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Slasher</strong></td>
+                        <td>Foca em assassinatos brutais, geralmente com um assassino em série.</td>
+                        <td>Assassinatos em série</td>
+                        <td>Assassinatos sangrentos, vilão icônico</td>
+                        <td>Pânico, Sexta-Feira 13</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Terror de Monstros</strong></td>
+                        <td>Filmes que apresentam grandes monstros ou criaturas ameaçadoras, como zumbis ou alienígenas.</td>
+                        <td>Criaturas monstruosas</td>
+                        <td>Invasões, criaturas destruidoras</td>
+                        <td>Godzilla, Alien, A Noite dos Mortos-Vivos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Terror Corporal</strong></td>
+                        <td>Explora os medos relacionados ao corpo humano, com mutilações e transformações bizarras.</td>
+                        <td>Transformações físicas extremas</td>
+                        <td>Mutilação, dor, deformação</td>
+                        <td>A Mosca, O Albergue</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>          
+
+        <section class="formulario-recomendacao">
+            <h2>Recomende um Filme</h2>
+            <form action="#" method="POST" class="form-recomendacao">
+                <div class="form-item">
+                    <label for="nome-filme">Nome do Filme:</label>
+                    <input type="text" id="nome-filme" name="nome-filme" required>
+                </div>
+        
+                <div class="form-item">
+                    <label for="genero-filme">Gênero:</label>
+                    <input type="text" id="genero-filme" name="genero-filme" required>
+                </div>
+        
+                <div class="form-item">
+                    <label for="ano-filme">Ano de Lançamento:</label>
+                    <input type="number" id="ano-filme" name="ano-filme" required>
+                </div>
+        
+                <div class="form-item">
+                    <label for="nota-filme">Nota do Filme (1 a 10):</label>
+                    <input type="number" id="nota-filme" name="nota-filme" min="1" max="10" required>
+                </div>
+        
+                <div class="form-item">
+                    <label for="comentarios">Comentário:</label>
+                    <textarea id="comentarios" name="comentarios" required></textarea>
+                </div>
+        
+                <button type="submit" class="btn-recomendar">Enviar Recomendação</button>
+            </form>
+        </section>        
+            
+    </main>
+</body>
+</html>
